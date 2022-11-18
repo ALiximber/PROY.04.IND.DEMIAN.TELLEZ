@@ -25,21 +25,129 @@ public class Registro extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        lblTitulo1 = new javax.swing.JLabel();
+        lblRNombre_libro = new javax.swing.JLabel();
+        lblRNombre_autor = new javax.swing.JLabel();
+        lblRNombre_editorial = new javax.swing.JLabel();
+        lblRNumero_paginas = new javax.swing.JLabel();
+        lblRNumero_editorial = new javax.swing.JLabel();
+        lblRAño_publicacion = new javax.swing.JLabel();
+        txtRNombre_libro = new javax.swing.JTextField();
+        txtRNombre_autor = new javax.swing.JTextField();
+        txtRNumero_editorial = new javax.swing.JTextField();
+        txtRNumero_paginas = new javax.swing.JTextField();
+        txtRNombre_editorial = new javax.swing.JTextField();
+        txtRAño_publicacion = new javax.swing.JTextField();
+        btnRegistro = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        lblTitulo1.setFont(new java.awt.Font("Segoe UI Semilight", 0, 24)); // NOI18N
+        lblTitulo1.setText("Registro de libros");
+
+        lblRNombre_libro.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lblRNombre_libro.setText("Nombre del libro:");
+
+        lblRNombre_autor.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lblRNombre_autor.setText("Nombre del autor:");
+
+        lblRNombre_editorial.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lblRNombre_editorial.setText("Nombre de la editorial:");
+
+        lblRNumero_paginas.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lblRNumero_paginas.setText("Numero de páginas:");
+
+        lblRNumero_editorial.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lblRNumero_editorial.setText("Numero de editorial:");
+
+        lblRAño_publicacion.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        lblRAño_publicacion.setText("Año de publicación:");
+
+        btnRegistro.setText("Registro");
+        btnRegistro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegistroActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(lblTitulo1, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnRegistro, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(lblRNombre_editorial)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(txtRNombre_editorial))
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(lblRNombre_autor)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(txtRNombre_autor))
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(lblRNombre_libro)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(txtRNombre_libro, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(lblRNumero_paginas)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(txtRNumero_paginas))
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(lblRAño_publicacion)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(txtRAño_publicacion))
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(lblRNumero_editorial)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(txtRNumero_editorial))))
+                .addContainerGap(49, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblTitulo1, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnRegistro))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblRNombre_libro)
+                    .addComponent(txtRNombre_libro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblRNombre_autor)
+                    .addComponent(txtRNombre_autor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblRNombre_editorial)
+                    .addComponent(txtRNombre_editorial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblRNumero_paginas)
+                    .addComponent(txtRNumero_paginas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblRAño_publicacion)
+                    .addComponent(txtRAño_publicacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblRNumero_editorial)
+                    .addComponent(txtRNumero_editorial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnRegistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRegistroActionPerformed
 
     /**
      * @param args the command line arguments
@@ -77,5 +185,19 @@ public class Registro extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnRegistro;
+    private javax.swing.JLabel lblRAño_publicacion;
+    private javax.swing.JLabel lblRNombre_autor;
+    private javax.swing.JLabel lblRNombre_editorial;
+    private javax.swing.JLabel lblRNombre_libro;
+    private javax.swing.JLabel lblRNumero_editorial;
+    private javax.swing.JLabel lblRNumero_paginas;
+    private javax.swing.JLabel lblTitulo1;
+    private javax.swing.JTextField txtRAño_publicacion;
+    private javax.swing.JTextField txtRNombre_autor;
+    private javax.swing.JTextField txtRNombre_editorial;
+    private javax.swing.JTextField txtRNombre_libro;
+    private javax.swing.JTextField txtRNumero_editorial;
+    private javax.swing.JTextField txtRNumero_paginas;
     // End of variables declaration//GEN-END:variables
 }
