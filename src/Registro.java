@@ -8,10 +8,12 @@
  * @author Demian
  */
 public class Registro extends javax.swing.JFrame {
-
+    int i=0;
     /**
      * Creates new form Registro
      */
+    clase libro[] = new clase[50];
+   
     public Registro() {
         initComponents();
     }
@@ -146,7 +148,22 @@ public class Registro extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnRegistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistroActionPerformed
-        // TODO add your handling code here:
+       
+        libro[i].setNombre_L(txtRNombre_libro.getText());
+        
+        libro[i].setNombre_A(txtRNombre_autor.getText());
+        
+        libro[i].setNombre_E(txtRNombre_editorial.getText());
+        
+        libro[i].setNombre_L(txtRNombre_libro.getText());
+        
+        libro[i].setNumero_E(Integer.parseInt(txtRNumero_editorial.getText()));
+        
+        libro[i].setNumero_P(Integer.parseInt(txtRNumero_paginas.getText()));
+        
+        libro[i].setAño_p(Integer.parseInt(txtRAño_publicacion.getText()));
+        
+        
     }//GEN-LAST:event_btnRegistroActionPerformed
 
     /**
