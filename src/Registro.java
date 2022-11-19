@@ -1,8 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
-
 /**
  *
  * @author Demian
@@ -12,8 +7,9 @@ public class Registro extends javax.swing.JFrame {
     /**
      * Creates new form Registro
      */
-    clase libro[] = new clase[50];
-   
+    clase libro = new clase();
+    
+    Principal principal = new Principal();
     public Registro() {
         initComponents();
     }
@@ -149,21 +145,23 @@ public class Registro extends javax.swing.JFrame {
 
     private void btnRegistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistroActionPerformed
        
-        libro[i].setNombre_L(txtRNombre_libro.getText());
+        libro.setNombre_L(txtRNombre_libro.getText());
         
-        libro[i].setNombre_A(txtRNombre_autor.getText());
+        libro.setNombre_A(txtRNombre_autor.getText());
         
-        libro[i].setNombre_E(txtRNombre_editorial.getText());
+        libro.setNombre_E(txtRNombre_editorial.getText());
         
-        libro[i].setNombre_L(txtRNombre_libro.getText());
+        libro.setNombre_L(txtRNombre_libro.getText());
         
-        libro[i].setNumero_E(Integer.parseInt(txtRNumero_editorial.getText()));
+        libro.setNumero_E(Integer.parseInt(txtRNumero_editorial.getText()));
         
-        libro[i].setNumero_P(Integer.parseInt(txtRNumero_paginas.getText()));
+        libro.setNumero_P(Integer.parseInt(txtRNumero_paginas.getText()));
         
-        libro[i].setAño_p(Integer.parseInt(txtRAño_publicacion.getText()));
+        libro.setAño_p(Integer.parseInt(txtRAño_publicacion.getText()));
         
+        i++;
         
+        principal.setVisible(true);
     }//GEN-LAST:event_btnRegistroActionPerformed
 
     /**
