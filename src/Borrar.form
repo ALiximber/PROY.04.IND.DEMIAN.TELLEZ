@@ -25,7 +25,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="162" max="-2" attributes="0"/>
-              <Component id="btnLPrincipal" min="-2" pref="152" max="-2" attributes="0"/>
+              <Component id="btnBPrincipal" min="-2" pref="152" max="-2" attributes="0"/>
               <EmptySpace pref="86" max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -34,19 +34,19 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace pref="262" max="32767" attributes="0"/>
-              <Component id="btnLPrincipal" min="-2" max="-2" attributes="0"/>
+              <Component id="btnBPrincipal" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JButton" name="btnLPrincipal">
+    <Component class="javax.swing.JButton" name="btnBPrincipal">
       <Properties>
         <Property name="text" type="java.lang.String" value="Volver la inicio"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLPrincipalActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBPrincipalActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
