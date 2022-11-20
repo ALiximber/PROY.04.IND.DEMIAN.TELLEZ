@@ -2,7 +2,7 @@ public class clase {
     private String Nombre_A,Nombre_L,Nombre_E;
     private int Numero_P,Numero_E,Año_p;
     
-    public clase(){
+    public clase(String Nombre_A,String Nombre_L,String Nombre_E, int Numero_P,int Numero_E,int Año_p){
         this.Año_p=0;
         this.Nombre_A=null;
         this.Nombre_E=null;
@@ -10,6 +10,7 @@ public class clase {
         this.Numero_E=0;
         this.Numero_P=0;
     }
+
     public String getNombre_A() {
         return Nombre_A;
     }
@@ -57,6 +58,7 @@ public class clase {
     public void setAño_p(int Año_p) {
         this.Año_p = Año_p;
     }
+    
     
     
 }

@@ -11,7 +11,7 @@ public class Registro extends javax.swing.JFrame {
     /**
      * Creates new form Registro
      */
-    clase libro = new clase();
+    clase libro[] = new clase[20];
     
     Principal principal = new Principal();
     public Registro() {
@@ -173,20 +173,20 @@ public class Registro extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnRegistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistroActionPerformed
-       
-        libro.setNombre_L(txtRNombre_libro.getText());
+
+        libro[i].setNombre_L(txtRNombre_libro.getText());
         
-        libro.setNombre_A(txtRNombre_autor.getText());
+        libro[i].setNombre_A(txtRNombre_autor.getText());
         
-        libro.setNombre_E(txtRNombre_editorial.getText());
+        libro[i].setNombre_E(txtRNombre_editorial.getText());
         
-        libro.setNombre_L(txtRNombre_libro.getText());
+        libro[i].setNombre_L(txtRNombre_libro.getText());
         
-        libro.setNumero_E(Integer.parseInt(txtRNumero_editorial.getText()));
+        libro[i].setNumero_E(Integer.parseInt(txtRNumero_editorial.getText()));
         
-        libro.setNumero_P(Integer.parseInt(txtRNumero_paginas.getText()));
+        libro[i].setNumero_P(Integer.parseInt(txtRNumero_paginas.getText()));
         
-        libro.setAño_p(Integer.parseInt(txtRAño_publicacion.getText()));
+        libro[i].setAño_p(Integer.parseInt(txtRAño_publicacion.getText()));
         
         i++;
         Principal principal = new Principal();
