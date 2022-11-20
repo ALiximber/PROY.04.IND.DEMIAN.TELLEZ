@@ -62,7 +62,7 @@ public class Registro extends javax.swing.JFrame {
         lblRAño_publicacion.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         lblRAño_publicacion.setText("Año de publicación:");
 
-        btnRegistro.setText("Registro");
+        btnRegistro.setText("Registrar");
         btnRegistro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRegistroActionPerformed(evt);
@@ -175,6 +175,9 @@ public class Registro extends javax.swing.JFrame {
         libro.setAño_p(Integer.parseInt(txtRAño_publicacion.getText()));
         
         i++;
+        Principal principal = new Principal();
+        principal.setVisible(true);
+        this.setVisible(false);
         
     }//GEN-LAST:event_btnRegistroActionPerformed
 

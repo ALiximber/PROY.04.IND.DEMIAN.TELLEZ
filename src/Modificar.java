@@ -212,7 +212,9 @@ public class Modificar extends javax.swing.JFrame {
         
         
         
-        
+        Principal principal = new Principal();
+        principal.setVisible(true);
+        this.setVisible(false);
         
     }//GEN-LAST:event_jButton2ActionPerformed
 
