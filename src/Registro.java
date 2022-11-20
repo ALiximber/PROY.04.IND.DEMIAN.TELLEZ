@@ -1,3 +1,7 @@
+
+import java.awt.Image;
+import java.awt.Toolkit;
+
 /**
  *
  * @author Demian
@@ -12,7 +16,17 @@ public class Registro extends javax.swing.JFrame {
     Principal principal = new Principal();
     public Registro() {
         initComponents();
+        setIconImage(getIconImage());
+        
     }
+    
+    
+     @Override
+    public Image getIconImage (){
+        Image retValue = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("imagenes/Imagen_icono.png"));
+        return retValue;
+    }
+
 
     /**
      * This method is called from within the constructor to initialize the form.

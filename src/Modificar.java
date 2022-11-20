@@ -1,3 +1,7 @@
+
+//import javax.swing.ImageIcon;
+import javax.swing.*;
+import java.awt.*;
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -12,9 +16,17 @@ public class Modificar extends javax.swing.JFrame {
     /**
      * Creates new form Modificar
      */
+    ImageIcon Icono = new ImageIcon("imagenes/Imagen_Icono.png");
     public Modificar() {
         initComponents();
+        setIconImage(getIconImage());
     }
+     @Override
+    public Image getIconImage (){
+        Image retValue = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("imagenes/Imagen_icono.png"));
+        return retValue;
+    }
+
 
     /**
      * This method is called from within the constructor to initialize the form.

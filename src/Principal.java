@@ -1,3 +1,7 @@
+
+import java.awt.Image;
+import java.awt.Toolkit;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -14,6 +18,13 @@ public class Principal extends javax.swing.JFrame {
      */
     public Principal() {
         initComponents();
+        setIconImage(getIconImage());
+    }
+    
+    @Override
+    public Image getIconImage (){
+        Image retValue = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("imagenes/Imagen_icono.png"));
+        return retValue;
     }
 
     /**
