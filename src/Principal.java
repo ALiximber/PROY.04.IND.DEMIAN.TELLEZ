@@ -45,6 +45,7 @@ public class Principal extends javax.swing.JFrame {
         btnIDel_autor = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel1.setText("Registro, modificacoión y baja de libros");
