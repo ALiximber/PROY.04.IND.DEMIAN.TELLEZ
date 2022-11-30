@@ -43,6 +43,7 @@ public class Borrar extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         btnBPrincipal.setText("Volver la inicio");
         btnBPrincipal.addActionListener(new java.awt.event.ActionListener() {

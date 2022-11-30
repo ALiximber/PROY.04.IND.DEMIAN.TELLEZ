@@ -54,6 +54,7 @@ public class Lista extends javax.swing.JFrame {
         lblEdicion = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         btnLPrincipal.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         btnLPrincipal.setText("Volver la inicio");

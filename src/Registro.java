@@ -54,6 +54,7 @@ public class Registro extends javax.swing.JFrame {
         btnRPrincipal = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         lblTitulo1.setFont(new java.awt.Font("Segoe UI Semilight", 0, 24)); // NOI18N
         lblTitulo1.setText("Registro de libros");
