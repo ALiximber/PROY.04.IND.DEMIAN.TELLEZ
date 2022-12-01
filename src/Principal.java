@@ -36,19 +36,19 @@ public class Principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        lblTitulo = new javax.swing.JLabel();
         btnIRegistro = new javax.swing.JButton();
         btnIModificar = new javax.swing.JButton();
         btnIBorrar = new javax.swing.JButton();
         btnIListado = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
+        lblOPC = new javax.swing.JLabel();
         btnIDel_autor = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel1.setText("Registro, modificacoión y baja de libros");
+        lblTitulo.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        lblTitulo.setText("Registro, modificacoión y baja de libros");
 
         btnIRegistro.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnIRegistro.setText("Registro");
@@ -82,8 +82,8 @@ public class Principal extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI Semilight", 0, 18)); // NOI18N
-        jLabel2.setText("Selecione una opción ");
+        lblOPC.setFont(new java.awt.Font("Segoe UI Semilight", 0, 18)); // NOI18N
+        lblOPC.setText("Selecione una opción ");
 
         btnIDel_autor.setText("A cerca del autor");
         btnIDel_autor.addActionListener(new java.awt.event.ActionListener() {
@@ -100,10 +100,10 @@ public class Principal extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(88, 88, 88)
-                        .addComponent(jLabel1))
+                        .addComponent(lblTitulo))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(200, 200, 200)
-                        .addComponent(jLabel2))
+                        .addComponent(lblOPC))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(115, 115, 115)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -121,9 +121,9 @@ public class Principal extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2)
+                .addComponent(lblOPC)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnIRegistro, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -212,7 +212,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JButton btnIListado;
     private javax.swing.JButton btnIModificar;
     private javax.swing.JButton btnIRegistro;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel lblOPC;
+    private javax.swing.JLabel lblTitulo;
     // End of variables declaration//GEN-END:variables
 }
